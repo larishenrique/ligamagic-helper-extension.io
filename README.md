@@ -1,4 +1,4 @@
-# 📚 LigaMagic Helper
+# 📚 ScryTrade
 
 Extensão para Chrome que automatiza a comparação entre coleções de cartas do site [LigaMagic](https://www.ligamagic.com.br)
 
