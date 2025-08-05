@@ -1,28 +1,38 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div>
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+          <div class="footer-col">
+            <div>
+              <h2 class="footer-heading">{{ site.title | escape }}</h2>
+              <p>Seu binder inteligente para comparações em MTG.</p>
+            </div>
+          </div>
 
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <div>
-          <h2 class="footer-heading">{{ site.title | escape }}</h2>
-          <p>Seu binder inteligente para comparações em MTG.</p>
+          <div class="footer-col footer-col">
+            <h3>Contato</h3>
+            {%- include social.html -%}
+          </div>
+
+          <div class="footer-col footer-col">
+            <h3>Páginas</h3>
+            <ul class="pages-list">
+              <li><a href="{{ '/' | relative_url }}">Home</a></li>
+              <li><a href="{{ '/versoes' | relative_url }}">Versões</a></li>
+              <li><a href="{{ '/como-usar' | relative_url }}">Como usar</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-       <div class="footer-col footer-col">
-        <h3>Contato</h3>
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col">
-        <h3>Páginas</h3>
-        <ul class="pages-list">
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/versoes' | relative_url }}">Versões</a></li>
-          <li><a href="{{ '/como-usar' | relative_url }}">Como usar</a></li>
-        </ul>
-      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrapper">
+       <div class="footer-col-wrapper">
+        <div class="copyright">
+          &copy; 2025 ScryTrade. Todos os direitos reservados.
+        </div>
+       </div>
     </div>
   </div>
 </footer>
