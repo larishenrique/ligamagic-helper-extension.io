@@ -3,32 +3,40 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <section class="home-description">
+    <p>
+      ScryTrade é uma ferramenta essencial para jogadores de Magic: The
+      Gathering que buscam negociar cartas com precisão. Compare coleções
+      automaticamente, identifique cartas em comum e otimize suas trocas com
+      apenas alguns cliques. Desenvolvida para traders que valorizam eficiência,
+      essa extensão elimina o trabalho manual de análise, permitindo que você
+      foque no que realmente importa: construir seu deck perfeito e expandir sua
+      coleção de forma inteligente.
+    </p>
+  </section>
 
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
+  <section class="home-description">
+    <h3>Funcionalidades</h3>
+    <ul>
+      <li>Compara duas coleções abertas em abas diferentes</li>
+      <li>Identifica cartas comuns entre as coleções</li>
+      <li>Exibe resultados em uma interface simples e intuitiva</li>
+      <li>Armazena coleções localmente para comparação posterior</li>
     </ul>
+  </section>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+  <section>
+    <h3>Baixe a extensão</h3>
+    <div>
+      <a
+        id="chromeStoreBtn"
+        target="_blank"
+        href="https://chromewebstore.google.com/detail/scrytrade/cbbfbmmfanpbpgnboihjgboooooglndd"
+        >ScryTrade</a
+      >
+    </div>
+    <div id="versionsLink">
+      <p>Ou verifique as <a href="/versoes">atualizações</a></p>
+    </div>
+  </section>
 </div>
