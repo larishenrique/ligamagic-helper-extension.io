@@ -13,6 +13,9 @@ permalink: /como-usar/
 Abra duas abas de coleções com URLs no formato: 
 `https://www.ligamagic.com.br/?view=colecao/colecao&id=SEU_ID`
 
+- Ou abra uma aba de decks com URL no formato:
+ `https://www.ligamagic.com.br/?view=dks/deck&id=SEU_ID`
+
 #### Capture as coleções:
 
 1. Clique no ícone da extensão  
